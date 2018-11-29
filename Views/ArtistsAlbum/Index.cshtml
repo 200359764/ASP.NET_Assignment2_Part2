@@ -1,0 +1,16 @@
+﻿@model IEnumerable<High_M_Music_Records.Models.ArtistsAlbum>
+
+@{
+    ViewBag.Title = "Artists' Albums";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Artists' Albums</h2>
+
+<ul>
+    @foreach (var a in Model)
+    {
+        <li>@Html.ActionLink(a.Title, "Index")</li>
+    }
+</ul>
+

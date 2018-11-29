@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Records";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>High M Music Records</h2>
+
+<p>This is our Website of High M Music Records</p>
+
+<ul>
+    <li>@Html.ActionLink("First Artist", "Artist", "Records", new { ArtistnName = "First Artist" }, null)</li>
+    <li>@Html.ActionLink("Second Artist", "Artist", "Records", new { ArtistName = "Second Artist" }, null)</li>
+    <li>@Html.ActionLink("Third Artist", "Artist", "Records", new { ArtistName = "Third Artist" }, null)</li>
+    <li>@Html.ActionLink("Fourth Artist", "Artist", "Records", new { ArtistName = "Fourth Artist" }, null)</li>
+    <li>@Html.ActionLink("Fifth Artist", "Artist", "Records", new { ArtistName = "Fifth Artist" }, null)</li>
+</ul>
+
